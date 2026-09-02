@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Segunda Guerra Mundial (1939-1945)</title>
+    <title>¬øQu√© es un P√≠xel? - Gu√≠a de Imagen Digital</title>
     <style>
         :root {
-            --primary: #1a252f;
-            --secondary: #2c3e50;
-            --accent: #c0392b;
-            --bg: #f8f9fa;
-            --text: #333;
+            --primary: #0f172a;
+            --secondary: #1e293b;
+            --accent: #06b6d4;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #334155;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             line-height: 1.6;
             margin: 0;
             background-color: var(--bg);
@@ -23,7 +24,12 @@
             background-color: var(--primary);
             color: white;
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 2.5rem 1rem;
+        }
+        header p {
+            color: var(--accent);
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
         }
         nav {
             background-color: var(--secondary);
@@ -37,10 +43,10 @@
         nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
         }
         nav a:hover {
-            color: #f39c12;
+            color: var(--accent);
         }
         .container {
             max-width: 900px;
@@ -48,16 +54,17 @@
             padding: 0 1rem;
         }
         section {
-            background: white;
-            padding: 1.5rem;
+            background: var(--card-bg);
+            padding: 1.8rem;
             margin-bottom: 1.5rem;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: var(--accent);
+            color: var(--primary);
             border-bottom: 2px solid var(--accent);
-            padding-bottom: 0.3rem;
+            padding-bottom: 0.4rem;
+            margin-top: 0;
         }
         table {
             width: 100%;
@@ -65,8 +72,8 @@
             margin-top: 1rem;
         }
         th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
+            border: 1px solid #e2e8f0;
+            padding: 12px;
             text-align: left;
         }
         th {
@@ -78,7 +85,7 @@
         }
         footer {
             text-align: center;
-            padding: 1rem;
+            padding: 1.2rem;
             background-color: var(--primary);
             color: white;
             margin-top: 2rem;
@@ -88,75 +95,78 @@
 <body>
 
     <header>
-        <h1>La Segunda Guerra Mundial</h1>
-        <p>El conflicto bÈlico m·s devastador del siglo XX (1939 - 1945)</p>
+        <h1>El Mundo de los P√≠xeles</h1>
+        <p>La unidad b√°sica de la imagen digital</p>
     </header>
 
     <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#bandos">Bandos</a>
-        <a href="#cronologia">LÌnea de Tiempo</a>
-        <a href="#consecuencias">Consecuencias</a>
+        <a href="#concepto">¬øQu√© es?</a>
+        <a href="#rgb">Modelo RGB</a>
+        <a href="#resolucion">Resoluciones</a>
+        <a href="#propiedades">Propiedades</a>
     </nav>
 
     <div class="container">
         
-        <section id="inicio">
-            <h2>Resumen General</h2>
-            <p>La Segunda Guerra Mundial fue un conflicto militar global que involucrÛ a la mayorÌa de las naciones del mundo, incluidas todas las grandes potencias, agrupadas en dos alianzas militares enfrentadas: los Aliados y las Potencias del Eje.</p>
+        <section id="concepto">
+            <h2>¬øQu√© es un P√≠xel?</h2>
+            <p>El t√©rmino <strong>p√≠xel</strong> proviene de la uni√≥n de las palabras inglesas <em>Picture</em> (pix) y <em>Element</em> (el). Es la menor unidad homog√©nea en color que forma parte de una imagen digital, ya sea en una pantalla o en una fotograf√≠a r√°ster.</p>
         </section>
 
-        <section id="bandos">
-            <h2>Los Bandos Enfrentados</h2>
+        <section id="rgb">
+            <h2>Composici√≥n del Color (Modelo RGB)</h2>
+            <p>Cada p√≠xel en una pantalla a color suele estar compuesto por tres subp√≠xeles de colores primarios aditivos:</p>
             <ul>
-                <li><strong>Los Aliados:</strong> Encabezados principalmente por Gran BretaÒa, la UniÛn SoviÈtica, Estados Unidos y Francia.</li>
-                <li><strong>El Eje:</strong> Alianza liderada por la Alemania nazi, la Italia fascista y el Imperio del JapÛn.</li>
+                <li><strong>R (Red):</strong> Rojo</li>
+                <li><strong>G (Green):</strong> Verde</li>
+                <li><strong>B (Blue):</strong> Azul</li>
             </ul>
+            <p>Combinando la intensidad de estos tres colores (con valores de 0 a 255 cada uno), un solo p√≠xel puede representar m√°s de <strong>16.7 millones de colores</strong> diferentes.</p>
         </section>
 
-        <section id="cronologia">
-            <h2>Eventos Clave</h2>
+        <section id="resolucion">
+            <h2>Resoluci√≥n y Megap√≠xeles</h2>
+            <p>La resoluci√≥n de una pantalla o c√°mara digital se mide seg√∫n el n√∫mero total de p√≠xeles que puede mostrar o capturar.</p>
             <table>
                 <thead>
                     <tr>
-                        <th>AÒo</th>
-                        <th>Acontecimiento</th>
+                        <th>Resoluci√≥n</th>
+                        <th>Dimensiones (Ancho x Alto)</th>
+                        <th>Total de P√≠xeles</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1939</td>
-                        <td>Alemania invade Polonia. Gran BretaÒa y Francia declaran la guerra.</td>
+                        <td>HD (720p)</td>
+                        <td>1280 √ó 720</td>
+                        <td>~0.9 Megap√≠xeles</td>
                     </tr>
                     <tr>
-                        <td>1941</td>
-                        <td>Ataque japonÈs a Pearl Harbor; EE.UU. entra al conflicto. OperaciÛn Barbarroja.</td>
+                        <td>Full HD (1080p)</td>
+                        <td>1920 √ó 1080</td>
+                        <td>~2.0 Megap√≠xeles</td>
                     </tr>
                     <tr>
-                        <td>1944</td>
-                        <td>Desembarco de NormandÌa (DÌa D), apertura del frente occidental.</td>
-                    </tr>
-                    <tr>
-                        <td>1945</td>
-                        <td>RendiciÛn de Alemania (mayo). Bombas atÛmicas sobre Hiroshima y Nagasaki; rendiciÛn de JapÛn (septiembre).</td>
+                        <td>4K UHD</td>
+                        <td>3840 √ó 2160</td>
+                        <td>~8.3 Megap√≠xeles</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section id="consecuencias">
-            <h2>Consecuencias Principales</h2>
+        <section id="propiedades">
+            <h2>Conceptos Clave Relacionados</h2>
             <ul>
-                <li><strong>PÈrdidas humanas:</strong> Se calculan entre 70 y 85 millones de muertes (civiles y militares).</li>
-                <li><strong>El Holocausto:</strong> Exterminio sistem·tico de 6 millones de judÌos y otros grupos por el rÈgimen nazi.</li>
-                <li><strong>GeopolÌtica:</strong> CreaciÛn de la OrganizaciÛn de las Naciones Unidas (ONU) y el inicio de la Guerra FrÌa entre EE.UU. y la URSS.</li>
+                <li><strong>PPI / DPI:</strong> P√≠xeles por pulgada. Mide la densidad de p√≠xeles en una pantalla o impresi√≥n; a mayor densidad, m√°s n√≠tida es la imagen.</li>
+                <li><strong>Pixelaci√≥n:</strong> Efecto visual que ocurre cuando se ampl√≠a tanto una imagen que los p√≠xeles individuales se vuelven visibles como peque√±os cuadrados.</li>
             </ul>
         </section>
 
     </div>
 
     <footer>
-        <p>Portal Informativo de Historia Universal</p>
+        <p>Gu√≠a Educativa sobre Tecnolog√≠a de la Imagen Digital</p>
     </footer>
 
 </body>

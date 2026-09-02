@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Segunda Guerra Mundial (1939-1945)</title>
+    <style>
+        :root {
+            --primary: #1a252f;
+            --secondary: #2c3e50;
+            --accent: #c0392b;
+            --bg: #f8f9fa;
+            --text: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--text);
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        nav {
+            background-color: var(--secondary);
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 0.8rem;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.3rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: var(--secondary);
+            color: white;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: var(--primary);
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>La Segunda Guerra Mundial</h1>
+        <p>El conflicto bélico más devastador del siglo XX (1939 - 1945)</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#bandos">Bandos</a>
+        <a href="#cronologia">Línea de Tiempo</a>
+        <a href="#consecuencias">Consecuencias</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="inicio">
+            <h2>Resumen General</h2>
+            <p>La Segunda Guerra Mundial fue un conflicto militar global que involucró a la mayoría de las naciones del mundo, incluidas todas las grandes potencias, agrupadas en dos alianzas militares enfrentadas: los Aliados y las Potencias del Eje.</p>
+        </section>
+
+        <section id="bandos">
+            <h2>Los Bandos Enfrentados</h2>
+            <ul>
+                <li><strong>Los Aliados:</strong> Encabezados principalmente por Gran Bretaña, la Unión Soviética, Estados Unidos y Francia.</li>
+                <li><strong>El Eje:</strong> Alianza liderada por la Alemania nazi, la Italia fascista y el Imperio del Japón.</li>
+            </ul>
+        </section>
+
+        <section id="cronologia">
+            <h2>Eventos Clave</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>Acontecimiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1939</td>
+                        <td>Alemania invade Polonia. Gran Bretaña y Francia declaran la guerra.</td>
+                    </tr>
+                    <tr>
+                        <td>1941</td>
+                        <td>Ataque japonés a Pearl Harbor; EE.UU. entra al conflicto. Operación Barbarroja.</td>
+                    </tr>
+                    <tr>
+                        <td>1944</td>
+                        <td>Desembarco de Normandía (Día D), apertura del frente occidental.</td>
+                    </tr>
+                    <tr>
+                        <td>1945</td>
+                        <td>Rendición de Alemania (mayo). Bombas atómicas sobre Hiroshima y Nagasaki; rendición de Japón (septiembre).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="consecuencias">
+            <h2>Consecuencias Principales</h2>
+            <ul>
+                <li><strong>Pérdidas humanas:</strong> Se calculan entre 70 y 85 millones de muertes (civiles y militares).</li>
+                <li><strong>El Holocausto:</strong> Exterminio sistemático de 6 millones de judíos y otros grupos por el régimen nazi.</li>
+                <li><strong>Geopolítica:</strong> Creación de la Organización de las Naciones Unidas (ONU) y el inicio de la Guerra Fría entre EE.UU. y la URSS.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Portal Informativo de Historia Universal</p>
+    </footer>
+
+</body>
+</html>
